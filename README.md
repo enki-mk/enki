@@ -1,1 +1,3 @@
-# enki
+# ENKI.mk
+
+website
