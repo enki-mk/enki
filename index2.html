@@ -23,18 +23,26 @@
     </style>
   </head>
   <body>
+    <audio id="alo-alo">
+      <source src="alo-alo.mp3" type="audio/mpeg">
+    </audio>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
       <div class="text-center">
         <img src="logo2.png" alt="Enki Logo" width="606" height="215"/>
         <p class="text-center">alo@enki.mk</p>
         <br/>
-        <button type="button" class="btn btn-dark text-center">Call me NOW!</button>
+        <button id="callButton" class="btn btn-dark text-center">Call NOW!</button>
         <button type="button" class="btn btn-dark text-center">mE cALL U!</button>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      $('#callButton').click(function() {
+        $('#alo-alo')[0].play();
+      });
+    </script>
   </body>
 </html>
 
