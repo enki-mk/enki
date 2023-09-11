@@ -21,14 +21,23 @@
         max-width: 500px;
         margin: auto;
       }
+      .vertical {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
     </style>
   </head>
   <body>
     <div class="content">
-      <img src="logo.png" alt="Enki Logo" />
-      <h1>ENKI.mk</h1>
-      <p>Communicate like human</p>
-      <p>alo@enki.mk</p>
+      <div class="vertical">
+        <img src="logo.png" alt="Enki Logo" />
+        <h1>ENKI.mk</h1>
+        <p>Communicate like human</p>
+        <p>alo@enki.mk</p>
+      </div>
     </div>
   </body>
 </html>
