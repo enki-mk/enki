@@ -21,10 +21,6 @@ p {
     font-size: 12px;
 }
 
-.white-wave {
-    color: white;
-}
-
 .pattern::before {
     width: 80vw;
     height: 80vw;
@@ -62,3 +58,7 @@ p {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10rem;
 }
+
+#wave path {
+    fill: white;
+ }
