@@ -26,7 +26,7 @@ p {
     height: 80vw;
     bottom: -60vw;
     left: 35vw;
-    z-index: -1;
+    z-index: -100;
 }
 
 .pattern::before,
@@ -39,6 +39,7 @@ p {
     display: block;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10rem;
+    z-index: -100;
 }
 
 .pattern::after {
@@ -46,6 +47,7 @@ p {
     height: 60vw;
     bottom: -30vw;
     left: 80vw;
+    z-index: -100;
 }
 
 .pattern::before,
@@ -58,6 +60,7 @@ p {
     display: block;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10rem;
+    z-index: -100;
 }
 
 #wave path {
