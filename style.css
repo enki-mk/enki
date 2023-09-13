@@ -20,7 +20,7 @@ p {
 .small-text-p {
     font-size: 12px;
 }
-/* 
+
 .pattern::before {
     width: 80vw;
     height: 80vw;
@@ -61,7 +61,7 @@ p {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10rem;
     z-index: -100;
-} */
+}
 
 #wave path {
     fill: white;
