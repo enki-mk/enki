@@ -26,6 +26,7 @@ p {
     height: 80vw;
     bottom: -60vw;
     left: 35vw;
+    z-index: -1;
 }
 
 .pattern::before,
