@@ -24,8 +24,8 @@ p {
 .pattern::before {
     width: 80vw;
     height: 80vw;
-    bottom: -40vw;
-    left: 25vw;
+    bottom: -60vw;
+    left: 35vw;
 }
 
 .pattern::before,
