@@ -32,11 +32,11 @@
     </style>
   </head>
   <body>
-    <audio id="alo-alo">
-      <source src="alo-alo.mp3" type="audio/mpeg">
+    <audio id="ring-ring-enki">
+      <source src="ring-ring-enki.mp3" type="audio/mpeg">
     </audio>
-    <audio id="enki-talks">
-      <source src="enki-talks.mp3" type="audio/mpeg">
+    <audio id="ring-ring-enka">
+      <source src="ring-ring-enka.mp3" type="audio/mpeg">
     </audio>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
       <div class="text-center">
@@ -44,19 +44,19 @@
         <p class="text-center">The most advanced virtual agent at your service.</p>
         <a href = "mailto:alo@enki.mk?subject = Hi there!&body = Please contact me regarding your product. I want to know more about ENKI AI." class="link-secondary">alo@enki.mk</a>
         <br/><br/>
-        <button id="callNow" type="button" class="btn btn-dark text-center">Call NOW!</button>
-        <button id="meCallU" type="button" class="btn btn-dark text-center">mE cALL U!</button>
+        <button id="callEnki" type="button" class="btn btn-dark text-center">Let me talk with you</button>
+        <button id="callEnka" type="button" class="btn btn-dark text-center">Let me talk to you</button>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
-      $('#callNow').click(function() {
-        $('#alo-alo')[0].play();
+      $('#callEnki').click(function() {
+        $('#ring-ring-enki')[0].play();
       });
-      $('#meCallU').click(function() {
-        $('#enki-talks')[0].play();
+      $('#callEnka').click(function() {
+        $('#ring-ring-enka')[0].play();
       });
     </script>
   </body>
