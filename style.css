@@ -68,5 +68,10 @@ p {
 }
 
 svg {
-
+    display: block;
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+    position:absolute;
   }
