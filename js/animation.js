@@ -29,7 +29,7 @@ window.onload = function () {
       
         for (var i = 0 ; i < 255; i++) {
             path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-            path.setAttribute('stroke-dasharray', '4,2');
+            path.setAttribute('stroke-dasharray', '4,1');
             mask.appendChild(path);
         }
         var doDraw = function () {
