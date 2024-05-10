@@ -3,8 +3,8 @@ window.onload = function () {
     var paths = document.getElementsByTagName('path');
     var visualizer = document.getElementById('visualizer');
     var mask = visualizer.getElementById('mask');
-    var h = document.getElementsByTagName('h4')[0];
-    var hSub = document.getElementsByTagName('h4')[1];
+    var h = document.getElementsByTagName('h6')[0];
+    var hSub = document.getElementsByTagName('h6')[1];
     var AudioContext;
     var audioContent;
     var start = false;
