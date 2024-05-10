@@ -95,12 +95,7 @@ svg {
 .sub-text span {
     font-size: 35px;
 }
-.button-container {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 85%;
-}
+
 button {
     transition: background-color 200ms linear;
 }
@@ -124,7 +119,6 @@ path {
 }
 
 /* Visualization end */
-
 
 visualization {
     position: absolute;
