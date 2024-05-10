@@ -2,7 +2,7 @@ body {
     font-family: "Roboto";
     font-size: 22px;
     background-color: #12111f;
-
+    height: 100vh;
 }
 
 h1 {
