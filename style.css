@@ -132,5 +132,5 @@ visualization {
     height: 100px;
     bottom: 0;
     overflow: hidden;
-    transform: rotate(180deg);
+    transform: scaleY(-1);
   }
