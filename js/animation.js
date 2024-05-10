@@ -92,8 +92,8 @@ window.onload = function () {
     document.getElementById('button').onclick = function () {
         if (start) {
             start = false;
-            this.innerHTML = "<span class='fa fa-play'></span>Start Listen";
-            this.className = "green-button";
+            this.innerHTML = "Start Listen";
+            this.className = "btn-success";
         }
         else {
             if (!permission) {
@@ -105,7 +105,7 @@ window.onload = function () {
                 audioContent = new AudioContext();
             }
             start = true;
-            this.innerHTML = "<span class='fa fa-stop'></span>Stop Listen";
+            this.innerHTML = "Stop Listen";
             this.className = "red-button";
         }
     };
