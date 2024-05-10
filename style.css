@@ -111,7 +111,7 @@ button {
 path {
     stroke-linecap: square;
     stroke: white;
-    stroke-width: 2px;
+    stroke-width: 1px;
 }
 
 /* Visualization end */
