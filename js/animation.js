@@ -3,8 +3,8 @@ window.onload = function () {
     var paths = document.getElementsByTagName('path');
     var visualizer = document.getElementById('visualizer');
     var mask = visualizer.getElementById('mask');
-    var h = document.getElementsByTagName('h1')[0];
-    var hSub = document.getElementsByTagName('h1')[1];
+    var h = document.getElementsByTagName('h4')[0];
+    var hSub = document.getElementsByTagName('h4')[1];
     var AudioContext;
     var audioContent;
     var start = false;
@@ -29,7 +29,7 @@ window.onload = function () {
       
         for (var i = 0 ; i < 255; i++) {
             path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-            path.setAttribute('stroke-dasharray', '4,1');
+            path.setAttribute('stroke-dasharray', '4,2');
             mask.appendChild(path);
         }
         var doDraw = function () {
