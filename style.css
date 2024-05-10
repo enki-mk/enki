@@ -4,6 +4,9 @@ body {
     background-color: #12111f;
     height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 h1 {
