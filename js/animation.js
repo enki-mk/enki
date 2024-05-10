@@ -106,7 +106,7 @@ window.onload = function () {
             }
             start = true;
             this.innerHTML = "Stop Listen";
-            this.className = "btn btn-info text-center";
+            this.className = "btn btn-warning text-center";
         }
     };
 };
