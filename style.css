@@ -20,7 +20,6 @@ p {
     box-sizing: content-box;
 }
 
-
 .small-text-p {
     font-size: 12px;
 }
@@ -67,6 +66,22 @@ p {
     z-index: -100;
 }
 
-#wave path {
+svg {
+    width: 600px;
+    width: 800px;
+    height: 100%;
+    padding: 50px;
+  }
+  
+  line {
+    stroke-width: 1;
+    stroke: #3c3c3c;
+  }
+  
+  #wave {
     fill: white;
- }
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #56acf4;
+  }
