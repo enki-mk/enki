@@ -68,20 +68,5 @@ p {
 }
 
 svg {
-    width: 800px;
-    height: 200px;
-    padding: 10px;
-  }
-  
-  line {
-    stroke-width: 1;
-    stroke: #3c3c3c;
-  }
-  
-  #wave {
-    fill: none;
-    stroke-width: 4;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #56acf4;
+
   }
