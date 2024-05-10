@@ -92,7 +92,7 @@ window.onload = function () {
     document.getElementById('button').onclick = function () {
         if (start) {
             start = false;
-            this.innerHTML = "Start Listen";
+            this.innerHTML = "Call";
             this.className = "btn btn-success text-center";
         }
         else {
@@ -105,7 +105,7 @@ window.onload = function () {
                 audioContent = new AudioContext();
             }
             start = true;
-            this.innerHTML = "Stop Listen";
+            this.innerHTML = "Stop";
             this.className = "btn btn-warning text-center";
         }
     };
