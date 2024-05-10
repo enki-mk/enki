@@ -84,6 +84,7 @@ svg {
     text-align:center;
     color:white;
     height: 20px;
+    line-height: normal;
 }
 
 .main-text {
