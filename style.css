@@ -67,10 +67,9 @@ p {
 }
 
 svg {
-    width: 600px;
     width: 800px;
-    height: 100%;
-    padding: 50px;
+    height: 20px;
+    padding: 10px;
   }
   
   line {
@@ -79,7 +78,7 @@ svg {
   }
   
   #wave {
-    fill: white;
+    fill: none;
     stroke-width: 4;
     stroke-linecap: round;
     stroke-linejoin: round;
