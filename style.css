@@ -125,4 +125,5 @@ visualization {
     overflow: hidden;
     transform: rotateY(180deg);
     transform: rotateX(180deg);
+    z-index: -100;
   }
