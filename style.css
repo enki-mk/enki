@@ -99,18 +99,6 @@ button {
     transition: background-color 200ms linear;
 }
 
-.green-button {
-    background-color: #4CAF50;
-}
-.green-button:hover {
-    background-color: #3e8e41;
-}
-.red-button {
-    background-color: #db6247;
-}
-.red-button:hover {
-    background-color: #cc5338;
-}
 path {
     stroke-linecap: square;
     stroke: white;
