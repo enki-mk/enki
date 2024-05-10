@@ -79,21 +79,17 @@ svg {
   h1 {
     width: 100%;
     font-family: sans-serif;
-    position:absolute;
     text-align:center;
     color:white;
 }
 .main-text {
-    font-size: 40px;
-    top: 40%;
+
 }
 .sub-text {
-    font-size: 30px;
-    font-weight: normal;
-    top: 60%;
+
 }
 .sub-text span {
-    font-size: 35px;
+
 }
 
 button {
