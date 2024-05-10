@@ -17,6 +17,10 @@ p {
     color: white;
 }
 
+.container {
+    padding-top: 30px;;
+}
+
 .selector-for-some-widget {
     box-sizing: content-box;
 }
