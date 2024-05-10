@@ -93,7 +93,7 @@ window.onload = function () {
         if (start) {
             start = false;
             this.innerHTML = "Start Listen";
-            this.className = "btn-success";
+            this.className = "btn btn-success text-center";
         }
         else {
             if (!permission) {
@@ -106,7 +106,7 @@ window.onload = function () {
             }
             start = true;
             this.innerHTML = "Stop Listen";
-            this.className = "red-button";
+            this.className = "btn btn-info text-center";
         }
     };
 };
