@@ -98,15 +98,24 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
-      $('#callEnki').click(function() {
+  $(document).ready(function() {
+    $('#callEnki').click(function() {
+      if ($('#ring-ring-enki')[0].paused) {
         $('#ring-ring-enka')[0].pause(); // Pause Enka audio if playing
         $('#ring-ring-enki')[0].play();
-
-      });
-      $('#callEnka').click(function() {
+      } else {
+        $('#ring-ring-enki')[0].pause();
+      }
+    });
+    $('#callEnka').click(function() {
+      if ($('#ring-ring-enka')[0].paused) {
         $('#ring-ring-enki')[0].pause(); // Pause Enki audio if playing
         $('#ring-ring-enka')[0].play();
-      });
+      } else {
+        $('#ring-ring-enka')[0].pause();
+      }
+    });
+  });
     </script>
   </body>
 </html>
