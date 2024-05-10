@@ -103,22 +103,9 @@ svg {
     top: 85%;
 }
 button {
-    padding: 13px 28px;
-    width: 200px;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 12px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color: white;
     transition: background-color 200ms linear;
 }
-button span {
-    display: block;
-    float: left;
-}
+
 .green-button {
     background-color: #4CAF50;
 }
@@ -135,21 +122,6 @@ path {
     stroke-linecap: square;
     stroke: white;
     stroke-width: 0.5px;
-}
-
-@media only screen and (max-width: 500px) {
-    .main-text {
-        font-size: 35px; 
-    }
-    .sub-text {
-        font-size: 28px;
-    }
-    .sub-text span {
-        font-size: 30px;
-    }
-    button {
-        font-size: 18px;
-    }
 }
 
 /* Visualization end */
