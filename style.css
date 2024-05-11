@@ -127,3 +127,7 @@ visualization {
     transform: rotateX(180deg);
     z-index: -100;
   }
+
+promo {
+    background-color: bisque;
+  }
