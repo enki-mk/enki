@@ -29,7 +29,7 @@
     <script src="/js/animation.js"></script>
     <!-- VAD -->
     <script async src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.js"></script>
-    <script async src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.7/dist/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.7/dist/bundle.min.js"></script>
     <script>
       async function main() {
         const myvad = await vad.MicVAD.new({
@@ -38,6 +38,13 @@
           },
           onSpeechEnd: (audio) => {
             // do something with `audio` (Float32Array of audio samples at sample rate 16000)...
+            console.log("Speech end")
+            const wavBuffer = vad.utils.encodeWAV(arr)
+            const base64 = vad.utils.arrayBufferToBase64(wavBuffer)
+            const url = `data:audio/wav;base64,${base64}`
+            const el = addAudio(url)
+            const speechList = document.getElementById("audio-list")
+            speechList.prepend(el)
           }
         })
         myvad.start()
