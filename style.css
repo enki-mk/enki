@@ -128,6 +128,9 @@ visualization {
     z-index: -100;
   }
 
+p > a {
+    color: white;
+}
 promo {
 
   }
