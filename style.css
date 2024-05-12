@@ -134,4 +134,8 @@ p > a {
 
 promo {
 
-  }
+    }
+
+ul#audio-list {
+    list-style-type: none;
+}
