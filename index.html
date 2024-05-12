@@ -30,28 +30,6 @@
     <!-- VAD -->
     <script async src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.7/dist/bundle.min.js"></script>
-    <script>
-      async function main() {
-        const myvad = await vad.MicVAD.new({
-          onSpeechStart: () => {
-            console.log("Speech start detected")
-          },
-          onSpeechEnd: (audio) => {
-            // do something with `audio` (Float32Array of audio samples at sample rate 16000)...
-            console.log("Speech end")
-            const wavBuffer = vad.utils.encodeWAV(arr)
-            const base64 = vad.utils.arrayBufferToBase64(wavBuffer)
-            const url = `data:audio/wav;base64,${base64}`
-            const el = addAudio(url)
-            const speechList = document.getElementById("audio-list")
-            speechList.prepend(el)
-          }
-        })
-        myvad.start()
-      }
-      main()
-    </script>
-
 
   </head>
   <body class="d-flex h-100 text-center text-bg-dark pattern">
@@ -96,6 +74,34 @@
         <a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href = "mailto:alo@enki.mk?subject = Hi there!&body = Please contact me regarding your product. I want to know more about ENKI AI." class="link-secondary">alo@enki.mk</a>
       </p>
     </div>
+
+
+
+
+    
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Basic vad-web functionality</h1>
+
+        <div class="block is-inline-flex">
+          <button
+            id="toggleVAD"
+            class="button is-primary is-loading"
+            onclick="window.toggleVAD()"
+            disabled
+          >
+            Start VAD
+          </button>
+        </div>
+
+        <div class="block">
+          <ul id="audio-list"></ul>
+        </div>
+      </div>
+    </section>
+
+
+
 
     <promo>
       test
