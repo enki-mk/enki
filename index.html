@@ -27,6 +27,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Animation -->
     <script src="/js/animation.js"></script>
+    <!-- VAD -->
+    <script async src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.7/dist/bundle.min.js"></script>
+    <script>
+      async function main() {
+        const myvad = await vad.MicVAD.new({
+          onSpeechStart: () => {
+            console.log("Speech start detected")
+          },
+          onSpeechEnd: (audio) => {
+            // do something with `audio` (Float32Array of audio samples at sample rate 16000)...
+          }
+        })
+        myvad.start()
+      }
+      main()
+    </script>
+
 
   </head>
   <body class="d-flex h-100 text-center text-bg-dark pattern">
