@@ -94,6 +94,15 @@ window.onload = function () {
             start = false;
             this.innerHTML = "Call";
             this.className = "btn btn-success text-center";
+        
+            // Stop the audio stream
+            this.audioStream.getStream().getTracks().forEach(function(track) {
+                track.stop();
+            });
+            // Release any system resources
+            this.audioContent.close();
+
+
         }
         else {
             if (!permission) {
@@ -107,6 +116,7 @@ window.onload = function () {
             start = true;
             this.innerHTML = "Stop";
             this.className = "btn btn-warning text-center";
+            
         }
     };
 };
