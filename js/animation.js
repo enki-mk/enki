@@ -95,12 +95,12 @@ window.onload = function () {
             this.innerHTML = "Call";
             this.className = "btn btn-success text-center";
         
-            // Stop the audio stream
-            this.audioStream.getStream().getTracks().forEach(function(track) {
-                track.stop();
-            });
-            // Release any system resources
-            this.audioContent.close();
+            // // Stop the audio stream
+            // this.audioStream.getStream().getTracks().forEach(function(track) {
+            //     track.stop();
+            // });
+            // // Release any system resources
+            // this.audioContent.close();
 
 
         }
