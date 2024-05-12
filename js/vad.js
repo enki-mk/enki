@@ -41,7 +41,7 @@ async function main() {
   }
 
   function addAudio(audioUrl) {
-    const entry = document.createElement("li")
+
     const audio = document.createElement("audio")
     audio.controls = true
     audio.src = audioUrl
