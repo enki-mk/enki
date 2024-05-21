@@ -1,6 +1,9 @@
 body {
-    font-family: "Roboto";
+    font-family: Inter,sans-serif;
     font-size: 22px;
+    line-height: 1.6em;
+    color: #9396a2;
+    background-color: #0e1219;
     background-color: #12111f;
     height: 100vh;
     display: flex;
